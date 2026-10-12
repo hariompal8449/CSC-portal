@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <header>
         <div class="header-container">
             <div class="header-top">
-                <!-- 🌟 गोल एनिमेटेड लोगो -->
+                <!-- 🌟 Circular Animated Logo -->
                 <div class="circular-logo-wrapper">
                     <div class="rotating-text-box">
                         <svg viewBox="0 0 100 100" width="80" height="80">
@@ -22,7 +22,7 @@
                             </defs>
                             <text>
                                 <textPath href="#circlePath" startOffset="0%" class="rotating-text">
-                                    ★ CSC जन सेवा केंद्र ★ CSC जन सेवा केंद्र 
+                                    ★ CSC Jan Seva Kendra ★ CSC Jan Seva Kendra 
                                 </textPath>
                             </text>
                         </svg>
@@ -30,9 +30,9 @@
                     <img src="images/logo.png" alt="CSC Logo" class="center-logo">
                 </div>
 
-                <!-- 🔍 कॉम्पैक्ट सर्च इनपुट बॉक्स -->
+                <!-- 🔍 Compact Search Input Box -->
                 <div class="header-search-box">
-                    <input type="text" data-key="search_placeholder" placeholder="सेवा खोजें..." id="service-search" onkeyup="filterServices()">
+                    <input type="text" data-key="search_placeholder" placeholder="Search services..." id="service-search" onkeyup="filterServices()">
                     <button type="button" id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
 
@@ -42,7 +42,7 @@
                 </button>
             </div>
             
-            <p style="text-align: center; font-size: 13px; margin-top: 5px;" data-key="header_subtitle">सभी प्रमुख सरकारी और डिजिटल नागरिक सेवाएं एक ही स्थान पर</p>
+            <p style="text-align: center; font-size: 13px; margin-top: 5px;" data-key="header_subtitle">All major government and digital citizen services in one place</p>
         </div>
     </header>
 
@@ -77,20 +77,20 @@
                     <span data-key="menu_more">More</span>
                     <i class="fa-solid fa-chevron-down" id="dropdownIcon"></i>
                 </div>
-               <ul class="submenu-list" id="subMenuList">
-        <li><a href="pages/forms.html"><i class="fa-solid fa-file-pdf"></i> <span data-key="menu_forms">Download Forms</span></a></li>
-        <li><a href="pages/about.html"><i class="fa-solid fa-circle-info"></i> <span data-key="menu_about">About Us</span></a></li>
-        <li><a href="pages/terms.html"><i class="fa-solid fa-shield-halved"></i> <span data-key="menu_terms">Terms & Conditions</span></a></li>
-        <li><a href="pages/contact.html"><i class="fa-solid fa-envelope"></i> <span data-key="menu_contact">Contact Us</span></a></li>
-    </ul>
+                <ul class="submenu-list" id="subMenuList">
+                    <li><a href="pages/forms.html"><i class="fa-solid fa-file-pdf"></i> <span data-key="menu_forms">Download Forms</span></a></li>
+                    <li><a href="pages/about.html"><i class="fa-solid fa-circle-info"></i> <span data-key="menu_about">About Us</span></a></li>
+                    <li><a href="pages/terms.html"><i class="fa-solid fa-shield-halved"></i> <span data-key="menu_terms">Terms & Conditions</span></a></li>
+                    <li><a href="pages/contact.html"><i class="fa-solid fa-envelope"></i> <span data-key="menu_contact">Contact Us</span></a></li>
+                </ul>
             </li>
         </ul>
         <li class="menu-item" style="list-style: none;">
             <a href="#" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; text-decoration: none; color: #333;">
-                <span><i class="fa-solid fa-language" style="margin-right: 15px; color: #2563eb;"></i> <span data-key="menu_language">भाषा बदलें (Language)</span></span>
+                <span><i class="fa-solid fa-language" style="margin-right: 15px; color: #2563eb;"></i> <span data-key="menu_language">Change Language</span></span>
                 <select id="languageSelect" onchange="changeLanguage(this.value)" style="padding: 4px 8px; border-radius: 4px; border: 1px solid #cbd5e1; cursor: pointer;">
-                    <option value="hi">हिंदी</option>
                     <option value="en">English</option>
+                    <option value="hi">हिंदी</option>
                     <option value="gu">ગુજરાતી</option>
                     <option value="mr">मराठी</option>
                 </select>
@@ -101,151 +101,150 @@
     <!-- 📢 Live Notice / Ticker Bar -->
     <div class="ticker-container">
         <div class="ticker-title">
-            <i class="fa-solid fa-bell"></i> <span data-key="latest_update">नवीनतम अपडेट:</span>
+            <i class="fa-solid fa-bell"></i> <span data-key="latest_update">Latest Updates:</span>
         </div>
         <div class="ticker-text">
             <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="6">
-                <a href="pages/pmkisan.html"><i class="fa-solid fa-star"></i> <span data-key="ticker_1">पीएम किसान सम्मान निधि: 17वीं किश्त की स्थिति जांचें!</span></a> &nbsp;|&nbsp; 
-                <a href="pages/voter.html"><i class="fa-solid fa-star"></i> <span data-key="ticker_2">वोटर कार्ड में नया सुधार (Form 8) शुरू हो गया है।</span></a> &nbsp;|&nbsp; 
-                <a href="pages/pan.html"><i class="fa-solid fa-star"></i> <span data-key="ticker_3">पैन-आधार लिंक करने की अंतिम तिथि से पहले तुरंत लिंक करें।</span></a> &nbsp;|&nbsp; 
-                <a href="pages/aadhaar.html"><i class="fa-solid fa-star"></i> <span data-key="ticker_4">ई-आधार और पीवीसी कार्ड ऑनलाइन ऑर्डर करें।</span></a>
+                <a href="pages/pmkisan.html"><i class="fa-solid fa-star"></i> <span data-key="ticker_1">PM Kisan Samman Nidhi: Check 17th installment status!</span></a> &nbsp;|&nbsp; 
+                <a href="pages/voter.html"><i class="fa-solid fa-star"></i> <span data-key="ticker_2">New correction in voter card (Form 8) has started.</span></a> &nbsp;|&nbsp; 
+                <a href="pages/pan.html"><i class="fa-solid fa-star"></i> <span data-key="ticker_3">Link PAN-Aadhaar immediately before the last date.</span></a> &nbsp;|&nbsp; 
+                <a href="pages/aadhaar.html"><i class="fa-solid fa-star"></i> <span data-key="ticker_4">Order e-Aadhaar and PVC card online.</span></a>
             </marquee>
         </div>
     </div>
     
-    
-        <!-- Main Content -->
+    <!-- Main Content -->
     <div class="main-container">
-        <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 10px;" data-key="main_heading">हमारी प्रमुख ऑनलाइन सेवाएं</h2>
-        <p style="text-align: center; color: var(--text-muted);" data-key="main_subheading">नीचे दी गई सेवाओं पर क्लिक करके आवश्यक जानकारी, दस्तावेज़ और महत्वपूर्ण लिंक्स प्राप्त करें</p>
+        <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 10px;" data-key="main_heading">Our Major Online Services</h2>
+        <p style="text-align: center; color: var(--text-muted);" data-key="main_subheading">Click on the services below to get necessary info, documents, and important links</p>
 
         <div class="services-grid" id="services-grid">
 
             <!-- 1. Aadhaar Card -->
-            <div class="card" data-title="aadhaar आधार कार्ड सेवाएं">
+            <div class="card" data-title="aadhaar services">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-id-card"></i></div>
-                    <h3 data-key="card1_title">आधार कार्ड सेवाएं</h3>
-                    <p data-key="card1_desc">नया आधार एनरोलमेंट, नाम/पता अपडेट, ई-आधार डाउनलोड और पीवीसी कार्ड ऑर्डर करें।</p>
+                    <h3 data-key="card1_title">Aadhaar Card Services</h3>
+                    <p data-key="card1_desc">New Aadhaar enrollment, name/address update, e-Aadhaar download, and PVC card order.</p>
                 </div>
-                <a href="pages/aadhaar.html" class="card-btn"><span data-key="view_service">सेवा देखें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/aadhaar.html" class="card-btn"><span data-key="view_service">View Service</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- 2. PAN Card -->
-            <div class="card" data-title="pan card पैन कार्ड सेवाएं">
+            <div class="card" data-title="pan card services">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-credit-card"></i></div>
-                    <h3 data-key="card2_title">पैन कार्ड सेवाएं</h3>
-                    <p data-key="card2_desc">नया पैन कार्ड (Form 49A), संशोधन, ई-पैन डाउनलोड और आधार-पैन लिंक करें।</p>
+                    <h3 data-key="card2_title">PAN Card Services</h3>
+                    <p data-key="card2_desc">New PAN Card (Form 49A), corrections, e-PAN download, and Aadhaar-PAN linking.</p>
                 </div>
-                <a href="pages/pan.html" class="card-btn"><span data-key="view_service">सेवा देखें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/pan.html" class="card-btn"><span data-key="view_service">View Service</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- 3. Voter ID -->
-            <div class="card" data-title="voter id मतदाता पहचान पत्र">
+            <div class="card" data-title="voter id card voter services">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-check-to-slot"></i></div>
-                    <h3 data-key="card3_title">मतदाता पहचान पत्र</h3>
-                    <p data-key="card3_desc">नया वोटर कार्ड (Form 6), संशोधन (Form 8) और डिजिटल e-EPIC कार्ड डाउनलोड करें।</p>
+                    <h3 data-key="card3_title">Voter ID Card</h3>
+                    <p data-key="card3_desc">New Voter Card (Form 6), corrections (Form 8), and digital e-EPIC card download.</p>
                 </div>
-                <a href="pages/voter.html" class="card-btn"><span data-key="view_service">सेवा देखें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/voter.html" class="card-btn"><span data-key="view_service">View Service</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- 4. Birth Certificate -->
-            <div class="card" data-title="birth certificate जन्म प्रमाण पत्र">
+            <div class="card" data-title="birth certificate">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-baby"></i></div>
-                    <h3 data-key="card4_title">जन्म प्रमाण पत्र</h3>
-                    <p data-key="card4_desc">जन्म पंजीकरण (CRS Portal), स्थिति जांचें और जन्म प्रमाण पत्र ऑनलाइन डाउनलोड करें।</p>
+                    <h3 data-key="card4_title">Birth Certificate</h3>
+                    <p data-key="card4_desc">Birth registration (CRS Portal), check status, and download birth certificate online.</p>
                 </div>
-                <a href="pages/birth.html" class="card-btn"><span data-key="view_service">सेवा देखें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/birth.html" class="card-btn"><span data-key="view_service">View Service</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- 5. Ration Card -->
-            <div class="card" data-title="ration card राशन कार्ड सेवाएं">
+            <div class="card" data-title="ration card services">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-bowl-rice"></i></div>
-                    <h3 data-key="card5_title">राशन कार्ड सेवाएं</h3>
-                    <p data-key="card5_desc">नया राशन कार्ड आवेदन, नाम जोड़ना/हटाना और राशन कार्ड सूची में नाम चेक करें।</p>
+                    <h3 data-key="card5_title">Ration Card Services</h3>
+                    <p data-key="card5_desc">New ration card application, add/remove names, and check name in ration card list.</p>
                 </div>
-                <a href="pages/ration.html" class="card-btn"><span data-key="view_service">सेवा देखें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/ration.html" class="card-btn"><span data-key="view_service">View Service</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- 6. Pension Schemes -->
-            <div class="card" data-title="pension pension schemes पेंशन योजनाएं">
+            <div class="card" data-title="pension schemes">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-                    <h3 data-key="card6_title">पेंशन योजनाएं</h3>
-                    <p data-key="card6_desc">वृद्धावस्था, विधवा एवं दिव्यांग पेंशन हेतु ऑनलाइन आवेदन और ई-केवाईसी (e-KYC) करें।</p>
+                    <h3 data-key="card6_title">Pension Schemes</h3>
+                    <p data-key="card6_desc">Online application and e-KYC for old age, widow, and disability pensions.</p>
                 </div>
-                <a href="pages/pension.html" class="card-btn"><span data-key="view_service">सेवा देखें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/pension.html" class="card-btn"><span data-key="view_service">View Service</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- 7. Scholarship -->
-            <div class="card" data-title="scholarship छात्रवृत्ति सेवाएं">
+            <div class="card" data-title="scholarship services">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3 data-key="card7_title">छात्रवृत्ति सेवाएं</h3>
-                    <p data-key="card7_desc">प्री-मैट्रिक, पोस्ट-मैट्रिक फ्रेश एवं रिन्यूअल छात्रवृत्ति फॉर्म भरें और स्टेटस चेक करें।</p>
+                    <h3 data-key="card7_title">Scholarship Services</h3>
+                    <p data-key="card7_desc">Fill pre-matric, post-matric fresh & renewal scholarship forms and check status.</p>
                 </div>
-                <a href="pages/scholarship.html" class="card-btn"><span data-key="view_service">सेवा देखें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/scholarship.html" class="card-btn"><span data-key="view_service">View Service</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- 8. PM-KISAN -->
-            <div class="card" data-title="pm kisan pmkisan पीएम किसान सम्मान निधि">
+            <div class="card" data-title="pm kisan pmkisan">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-wheat-awn"></i></div>
-                    <h3 data-key="card8_title">पीएम किसान सम्मान निधि</h3>
-                    <p data-key="card8_desc">नया किसान पंजीकरण, OTP/Face e-KYC और किश्त की स्थिति (Beneficiary Status) चेक करें।</p>
+                    <h3 data-key="card8_title">PM Kisan Samman Nidhi</h3>
+                    <p data-key="card8_desc">New farmer registration, OTP/Face e-KYC, and check beneficiary status.</p>
                 </div>
-                <a href="pages/pmkisan.html" class="card-btn"><span data-key="view_service">सेवा देखें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/pmkisan.html" class="card-btn"><span data-key="view_service">View Service</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- 9. Ayushman Bharat Yojana -->
-            <div class="card" data-title="ayushman bharat आयुष्मान भारत योजना स्वास्थ्य कार्ड">
+            <div class="card" data-title="ayushman bharat health card">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-                    <h3 data-key="card9_title">आयुष्मान भारत योजना</h3>
-                    <p data-key="card9_desc">आयुष्मान कार्ड से जुड़ी जानकारी, पात्रता जांच और ऑनलाइन आवेदन की सुविधा।</p>
+                    <h3 data-key="card9_title">Ayushman Bharat Yojana</h3>
+                    <p data-key="card9_desc">Information, eligibility check, and online application facility for Ayushman Card.</p>
                 </div>
-                <a href="pages/ayushman.html" class="card-btn"><span data-key="view_service">सेवा देखें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/ayushman.html" class="card-btn"><span data-key="view_service">View Service</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- 10. Shram Card / E-Shram -->
-            <div class="card" data-title="shram card लेबर ई-श्रम कार्ड सेवाएं">
+            <div class="card" data-title="shram card labor eshram services">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-helmet-safety"></i></div>
-                    <h3 data-key="card10_title">लेबर / ई-श्रम कार्ड सेवाएं</h3>
-                    <p data-key="card10_desc">असंगठित क्षेत्र के मजदूरों के लिए ई-श्रम कार्ड पंजीकरण और लाभ।</p>
+                    <h3 data-key="card10_title">Labor / e-Shram Card Services</h3>
+                    <p data-key="card10_desc">e-Shram card registration and benefits for unorganized sector workers.</p>
                 </div>
-                <a href="pages/shramcard.html" class="card-btn"><span data-key="view_service">सेवा देखें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/shramcard.html" class="card-btn"><span data-key="view_service">View Service</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- 11. Certificates (Caste, Domicile, Income) -->
-            <div class="card" data-title="certificates जाति निवास आय प्रमाण पत्र">
+            <div class="card" data-title="certificates caste domicile income">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-file-lines"></i></div>
-                    <h3 data-key="card11_title">जाति, निवास और आय प्रमाण पत्र</h3>
-                    <p data-key="card11_desc">राज्य सरकार के पोर्टल के माध्यम से आवश्यक प्रमाण पत्र बनवाने की जानकारी।</p>
+                    <h3 data-key="card11_title">Caste, Domicile & Income Certificates</h3>
+                    <p data-key="card11_desc">Information on getting required certificates through state government portal.</p>
                 </div>
-                <a href="pages/certificates.html" class="card-btn"><span data-key="view_service">सेवा देखें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/certificates.html" class="card-btn"><span data-key="view_service">View Service</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <!-- 12. PDF Forms Download -->
-            <div class="card" data-title="pdf forms download फॉर्म डाउनलोड">
+            <div class="card" data-title="pdf forms download">
                 <div>
                     <div class="card-icon"><i class="fa-solid fa-file-pdf" style="color: #dc2626;"></i></div>
-                    <h3 data-key="card12_title">महत्वपूर्ण PDF फॉर्म्स</h3>
-                    <p data-key="card12_desc">वोटर फॉर्म 6, पैन 49A, आधार अपडेट व अन्य सभी आवेदन फॉर्म मुफ़्त में डाउनलोड करें।</p>
+                    <h3 data-key="card12_title">Important PDF Forms</h3>
+                    <p data-key="card12_desc">Download voter form 6, PAN 49A, Aadhaar update, and all other application forms free.</p>
                 </div>
-                <a href="pages/forms.html" class="card-btn"><span data-key="card12_btn">फॉर्म डाउनलोड करें</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="pages/forms.html" class="card-btn"><span data-key="card12_btn">Download Forms</span> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
         </div>
     </div>
 
     <!-- 🔝 Back to Top Button & Chatbot UI -->
-    <button id="backToTopBtn" onclick="scrollToTop()" title="ऊपर जाएँ">
+    <button id="backToTopBtn" onclick="scrollToTop()" title="Go to top">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
@@ -255,21 +254,20 @@
 
     <div id="chatbot-window">
         <div class="chat-header">
-            <span><i class="fa-solid fa-robot"></i> CSC AI डिजिटल सहायक</span>
+            <span><i class="fa-solid fa-robot"></i> CSC AI Digital Assistant</span>
             <span class="close-btn" onclick="toggleChatbot()">&times;</span>
         </div>
         <div class="chat-body" id="chat-body">
-            <div class="bot-msg">नमस्कार! मैं आपका CSC AI सहायक हूँ। आप मुझसे सेवाओं के बारे में बोलकर या लिखकर पूछ सकते हैं।</div>
+            <div class="bot-msg">Hello! I am your CSC AI Assistant. You can ask me about services by typing or speaking.</div>
         </div>
         <div class="chat-footer">
-            <input type="text" id="user-input" placeholder="यहाँ लिखें या बोलें..." onkeypress="handleKeyPress(event)">
-            <button onclick="startVoiceRecognition()" title="बोलकर पूछें" class="mic-btn"><i class="fa-solid fa-microphone"></i></button>
+            <input type="text" id="user-input" placeholder="Type or speak here..." onkeypress="handleKeyPress(event)">
+            <button onclick="startVoiceRecognition()" title="Voice Search" class="mic-btn"><i class="fa-solid fa-microphone"></i></button>
             <button onclick="sendMessage()" class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
         </div>
     </div>
     
-    
-        <!-- Website Core & Chatbot JavaScript Functions -->
+    <!-- Website Core & Chatbot JavaScript Functions -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const menuToggleBtn = document.getElementById('menuToggle');
@@ -364,7 +362,7 @@
             if ('speechSynthesis' in window) {
                 window.speechSynthesis.cancel();
                 const utterance = new SpeechSynthesisUtterance(textToSpeak);
-                utterance.lang = 'hi-IN';
+                utterance.lang = 'en-US';
                 window.speechSynthesis.speak(utterance);
             }
         }
@@ -404,17 +402,17 @@
             chatBody.scrollTop = chatBody.scrollHeight;
 
             setTimeout(() => {
-                let botReply = "माफ़ कीजिए, मुझे आपका सवाल समझ नहीं आया। कृपया आधार, पैन, वोटर कार्ड या अन्य सेवाओं के बारे में पूछें।";
+                let botReply = "Sorry, I didn't understand your query. Please ask about Aadhaar, PAN, Voter ID, or other services.";
                 
                 const lowerText = userText.toLowerCase();
-                if (lowerText.includes('आधार') || lowerText.includes('aadhaar')) {
-                    botReply = "आधार कार्ड के लिए आप नया एनरोलमेंट, नाम/पता अपडेट या ई-आधार डाउनलोड कर सकते हैं।";
-                } else if (lowerText.includes('पैन') || lowerText.includes('pan')) {
-                    botReply = "पैन कार्ड (Form 49A) बनवाने, संशोधन करने या आधार से लिंक करने की सुविधा उपलब्ध है।";
-                } else if (lowerText.includes('वोटर') || lowerText.includes('voter')) {
-                    botReply = "मतदाता पहचान पत्र (Form 6 नया और Form 8 संशोधन) के लिए वोटर सेक्शन देखें।";
-                } else if (lowerText.includes('नमस्ते') || lowerText.includes('hello')) {
-                    botReply = "नमस्ते! आज मैं आपकी किस सरकारी सेवा में सहायता कर सकता हूँ?";
+                if (lowerText.includes('aadhaar')) {
+                    botReply = "For Aadhaar, you can apply for new enrollment, update name/address, or download e-Aadhaar.";
+                } else if (lowerText.includes('pan')) {
+                    botReply = "You can apply for a new PAN card (Form 49A), make corrections, or link PAN with Aadhaar.";
+                } else if (lowerText.includes('voter')) {
+                    botReply = "For Voter ID (Form 6 for new and Form 8 for corrections), please check the Voter section.";
+                } else if (lowerText.includes('hello') || lowerText.includes('hi')) {
+                    botReply = "Hello! Which government service can I help you with today?";
                 }
 
                 const botMsgDiv = document.createElement('div');
@@ -432,7 +430,7 @@
             if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
                 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
                 const recognition = new SpeechRecognition();
-                recognition.lang = 'hi-IN';
+                recognition.lang = 'en-US';
                 recognition.interimResults = false;
                 recognition.maxAlternatives = 1;
 
@@ -444,12 +442,12 @@
 
                 recognition.start();
             } else {
-                alert("आपका ब्राउज़र वॉयस सर्च को सपोर्ट नहीं करता है।");
+                alert("Your browser does not support voice search.");
             }
         }
     </script>
     
-   <!-- Footer Section -->
+    <!-- Footer Section -->
     <footer>
         <div class="footer-container" style="background: #1e293b; color: #fff; padding: 25px 20px; text-align: center; margin-top: 40px;">
             <div class="footer-links" style="margin-bottom: 15px;">
@@ -485,7 +483,7 @@
     <script type="text/javascript">
     function googleTranslateElementInit() {
       new google.translate.Element({
-        pageLanguage: 'hi',
+        pageLanguage: 'en',
         includedLanguages: 'hi,en,gu,mr',
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE
       }, 'google_translate_element');
@@ -496,63 +494,6 @@
     <!-- Multilingual Translation Script -->
     <script>
     const translations = {
-        hi: {
-            search_placeholder: "सेवा खोजें...",
-            header_subtitle: "सभी प्रमुख सरकारी और डिजिटल नागरिक सेवाएं एक ही स्थान पर",
-            menu_home: "Home",
-            menu_aadhaar: "Aadhaar Services",
-            menu_pan: "PAN Card",
-            menu_voter: "Voter ID Card",
-            menu_pmkisan: "PM Kisan",
-            menu_ration: "Ration Card",
-            menu_pension: "Pension Schemes",
-            menu_scholarship: "UP Scholarship",
-            menu_more: "More",
-            menu_forms: "Download Forms",
-            menu_about: "About Us",
-            menu_terms: "Terms & Conditions",
-            menu_contact: "Contact Us",
-            menu_language: "भाषा बदलें (Language)",
-            latest_update: "नवीनतम अपडेट:",
-            ticker_1: "पीएम किसान सम्मान निधि: 17वीं किश्त की स्थिति जांचें!",
-            ticker_2: "वोटर कार्ड में नया सुधार (Form 8) शुरू हो गया है।",
-            ticker_3: "पैन-आधार लिंक करने की अंतिम तिथि से पहले तुरंत लिंक करें।",
-            ticker_4: "ई-आधार और पीवीसी कार्ड ऑनलाइन ऑर्डर करें।",
-            main_heading: "हमारी प्रमुख ऑनलाइन सेवाएं",
-            main_subheading: "नीचे दी गई सेवाओं पर क्लिक करके आवश्यक जानकारी, दस्तावेज़ और महत्वपूर्ण लिंक्स प्राप्त करें",
-            view_service: "सेवा देखें",
-            card1_title: "आधार कार्ड सेवाएं",
-            card1_desc: "नया आधार एनरोलमेंट, नाम/पता अपडेट, ई-आधार डाउनलोड और पीवीसी कार्ड ऑर्डर करें।",
-            card2_title: "पैन कार्ड सेवाएं",
-            card2_desc: "नया पैन कार्ड (Form 49A), संशोधन, ई-पैन डाउनलोड और आधार-पैन लिंक करें।",
-            card3_title: "मतदाता पहचान पत्र",
-            card3_desc: "नया वोटर कार्ड (Form 6), संशोधन (Form 8) और डिजिटल e-EPIC कार्ड डाउनलोड करें।",
-            card4_title: "जन्म प्रमाण पत्र",
-            card4_desc: "जन्म पंजीकरण (CRS Portal), स्थिति जांचें और जन्म प्रमाण पत्र ऑनलाइन डाउनलोड करें।",
-            card5_title: "राशन कार्ड सेवाएं",
-            card5_desc: "नया राशन कार्ड आवेदन, नाम जोड़ना/हटाना और राशन कार्ड सूची में नाम चेक करें।",
-            card6_title: "पेंशन योजनाएं",
-            card6_desc: "वृद्धावस्था, विधवा एवं दिव्यांग पेंशन हेतु ऑनलाइन आवेदन और ई-केवाईसी (e-KYC) करें।",
-            card7_title: "छात्रवृत्ति सेवाएं",
-            card7_desc: "प्री-मैट्रिक, पोस्ट-मैट्रिक फ्रेश एवं रिन्यूअल छात्रवृत्ति फॉर्म भरें और स्टेटस चेक करें।",
-            card8_title: "पीएम किसान सम्मान निधि",
-            card8_desc: "नया किसान पंजीकरण, OTP/Face e-KYC और किश्त की स्थिति (Beneficiary Status) चेक करें।",
-            card9_title: "आयुष्मान भारत योजना",
-            card9_desc: "आयुष्मान कार्ड से जुड़ी जानकारी, पात्रता जांच और ऑनलाइन आवेदन की सुविधा।",
-            card10_title: "लेबर / ई-श्रम कार्ड सेवाएं",
-            card10_desc: "असंगठित क्षेत्र के मजदूरों के लिए ई-श्रम कार्ड पंजीकरण और लाभ।",
-            card11_title: "जाति, निवास और आय प्रमाण पत्र",
-            card11_desc: "राज्य सरकार के पोर्टल के माध्यम से आवश्यक प्रमाण पत्र बनवाने की जानकारी।",
-            card12_title: "महत्वपूर्ण PDF फॉर्म्स",
-            card12_desc: "वोटर फॉर्म 6, पैन 49A, आधार अपडेट व अन्य सभी आवेदन फॉर्म मुफ़्त में डाउनलोड करें।",
-            card12_btn: "फॉर्म डाउनलोड करें",
-            footer_home: "होम",
-            footer_about: "हमारे बारे में",
-            footer_privacy: "गोपनीयता नीति",
-            footer_contact: "संपर्क करें",
-            footer_rights: "सर्वाधिकार सुरक्षित",
-            footer_desc: "डिजिटल सेवा और नागरिक सुविधाओं हेतु समर्पित"
-        },
         en: {
             search_placeholder: "Search services...",
             header_subtitle: "All major government and digital citizen services in one place",
@@ -609,6 +550,63 @@
             footer_contact: "Contact Us",
             footer_rights: "All Rights Reserved",
             footer_desc: "Dedicated to digital services and citizen facilities"
+        },
+        hi: {
+            search_placeholder: "सेवा खोजें...",
+            header_subtitle: "सभी प्रमुख सरकारी और डिजिटल नागरिक सेवाएं एक ही स्थान पर",
+            menu_home: "Home",
+            menu_aadhaar: "Aadhaar Services",
+            menu_pan: "PAN Card",
+            menu_voter: "Voter ID Card",
+            menu_pmkisan: "PM Kisan",
+            menu_ration: "Ration Card",
+            menu_pension: "Pension Schemes",
+            menu_scholarship: "UP Scholarship",
+            menu_more: "More",
+            menu_forms: "Download Forms",
+            menu_about: "About Us",
+            menu_terms: "Terms & Conditions",
+            menu_contact: "Contact Us",
+            menu_language: "भाषा बदलें (Language)",
+            latest_update: "नवीनतम अपडेट:",
+            ticker_1: "पीएम किसान सम्मान निधि: 17वीं किश्त की स्थिति जांचें!",
+            ticker_2: "वोटर कार्ड में नया सुधार (Form 8) शुरू हो गया है।",
+            ticker_3: "पैन-आधार लिंक करने की अंतिम तिथि से पहले तुरंत लिंक करें।",
+            ticker_4: "ई-आधार और पीवीसी कार्ड ऑनलाइन ऑर्डर करें।",
+            main_heading: "हमारी प्रमुख ऑनलाइन सेवाएं",
+            main_subheading: "नीचे दी गई सेवाओं पर क्लिक करके आवश्यक जानकारी, दस्तावेज़ और महत्वपूर्ण लिंक्स प्राप्त करें",
+            view_service: "सेवा देखें",
+            card1_title: "आधार कार्ड सेवाएं",
+            card1_desc: "नया आधार एनरोलमेंट, नाम/पता अपडेट, ई-आधार डाउनलोड और पीवीसी कार्ड ऑर्डर करें।",
+            card2_title: "पैन कार्ड सेवाएं",
+            card2_desc: "नया पैन कार्ड (Form 49A), संशोधन, ई-पैन डाउनलोड और आधार-पैन लिंक करें।",
+            card3_title: "मतदाता पहचान पत्र",
+            card3_desc: "नया वोटर कार्ड (Form 6), संशोधन (Form 8) और डिजिटल e-EPIC कार्ड डाउनलोड करें।",
+            card4_title: "जन्म प्रमाण पत्र",
+            card4_desc: "जन्म पंजीकरण (CRS Portal), स्थिति जांचें और जन्म प्रमाण पत्र ऑनलाइन डाउनलोड करें।",
+            card5_title: "राशन कार्ड सेवाएं",
+            card5_desc: "नया राशन कार्ड आवेदन, नाम जोड़ना/हटाना और राशन कार्ड सूची में नाम चेक करें।",
+            card6_title: "पेंशन योजनाएं",
+            card6_desc: "वृद्धावस्था, विधवा एवं दिव्यांग पेंशन हेतु ऑनलाइन आवेदन और ई-केवाईसी (e-KYC) करें।",
+            card7_title: "छात्रवृत्ति सेवाएं",
+            card7_desc: "प्री-मैट्रिक, पोस्ट-मैट्रिक फ्रेश एवं रिन्यूअल छात्रवृत्ति फॉर्म भरें और स्टेटस चेक करें।",
+            card8_title: "पीएम किसान सम्मान निधि",
+            card8_desc: "नया किसान पंजीकरण, OTP/Face e-KYC और किश्त की स्थिति (Beneficiary Status) चेक करें।",
+            card9_title: "आयुष्मान भारत योजना",
+            card9_desc: "आयुष्मान कार्ड से जुड़ी जानकारी, पात्रता जांच और ऑनलाइन आवेदन की सुविधा।",
+            card10_title: "लेबर / ई-श्रम कार्ड सेवाएं",
+            card10_desc: "असंगठित क्षेत्र के मजदूरों के लिए ई-श्रम कार्ड पंजीकरण और लाभ।",
+            card11_title: "जाति, निवास और आय प्रमाण पत्र",
+            card11_desc: "राज्य सरकार के पोर्टल के माध्यम से आवश्यक प्रमाण पत्र बनवाने की जानकारी।",
+            card12_title: "महत्वपूर्ण PDF फॉर्म्स",
+            card12_desc: "वोटर फॉर्म 6, पैन 49A, आधार अपडेट व अन्य सभी आवेदन फॉर्म मुफ़्त में डाउनलोड करें।",
+            card12_btn: "फॉर्म डाउनलोड करें",
+            footer_home: "होम",
+            footer_about: "हमारे बारे में",
+            footer_privacy: "गोपनीयता नीति",
+            footer_contact: "संपर्क करें",
+            footer_rights: "सर्वाधिकार सुरक्षित",
+            footer_desc: "डिजिटल सेवा और नागरिक सुविधाओं हेतु समर्पित"
         },
         gu: {
             search_placeholder: "સેવા શોધો...",
@@ -741,7 +739,7 @@
     }
 
     window.addEventListener('DOMContentLoaded', () => {
-        const savedLang = localStorage.getItem('selectedLang') || 'hi';
+        const savedLang = localStorage.getItem('selectedLang') || 'en';
         const selectBox = document.getElementById('languageSelect');
         if (selectBox) {
             selectBox.value = savedLang;
@@ -750,26 +748,6 @@
     });
     </script>
     <script src="script.js"></script>
-<script src="chatbot.js"></script>
-
-
-
-
-<!-- Google Translate Widget Start -->
-<div id="google_translate_element" style="margin: 10px 0; text-align: center;"></div>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.Element({
-    pageLanguage: 'hi',
-    includedLanguages: 'hi,en,gu,mr',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<!-- Google Translate Widget End -->
-
+    <script src="chatbot.js"></script>
 </body>
 </html>
