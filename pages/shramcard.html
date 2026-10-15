@@ -4,93 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Labour / e-Shram Card Services - CSC Digital Seva Portal</title>
+    <!-- Root style link -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .service-detail-container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: var(--card-bg, #ffffff);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary-color, #2563eb);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .section-box {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .section-box h3 {
+            color: var(--primary-color, #1e293b);
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            background: rgba(13, 110, 253, 0.05);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* Useful Links Table Style (Sarkari Result Style) */
+        .links-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 15px;
+        }
+        .links-table th {
+            background-color: #16a34a;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .links-table td {
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            text-align: center;
+        }
+        .links-table td:first-child {
+            font-weight: bold;
+            color: #d97706;
+            text-align: left;
+        }
+        .links-table a {
+            color: #2563eb;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .links-table a:hover {
+            text-decoration: underline;
+            color: #1d4ed8;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-item p {
+            margin-top: 5px;
+            color: #475569;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <div class="header-container">
-            <div class="header-top">
-                <a href="../index.html" class="back-home-btn" style="color: white; font-size: 20px;"><i class="fa-solid fa-arrow-left"></i></a>
-                <h2 style="color: white; margin: 0; font-size: 18px;">Labour / e-Shram Card Services</h2>
-                <div></div>
-            </div>
-        </div>
-    </header>
+    <!-- Service Detail Content -->
+    <div class="service-detail-container">
+        <a href="../index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home Page</a>
 
-    <!-- Main Content -->
-    <div class="main-container" style="padding-top: 20px;">
-        <div class="card" style="max-width: 700px; margin: 0 auto; text-align: left; padding: 25px;">
-            
-            <div style="text-align: center; margin-bottom: 20px;">
-                <i class="fa-solid fa-helmet-safety" style="font-size: 45px; color: #2563eb;"></i>
-                <h2 style="color: var(--primary-color); margin-top: 10px;">Labour / e-Shram Card Services</h2>
-            </div>
-            
-            <!-- 📌 Service Introduction -->
-            <h3 style="color: var(--primary-color); font-size: 16px; margin-bottom: 8px;"><i class="fa-solid fa-circle-info"></i> Service Introduction</h3>
-            <p style="font-size: 14px; line-height: 1.6;">The e-Shram portal is operated by the Government of India to create a national database of unorganized workers and provide them with the benefits of government schemes.</p>
-            
-            <!-- 📄 Required Documents -->
-            <h3 style="color: var(--primary-color); font-size: 16px; margin-top: 20px; margin-bottom: 8px;"><i class="fa-solid fa-file-lines"></i> Required Documents</h3>
-            <ul style="margin-left: 20px; font-size: 14px; line-height: 1.8;">
-                <li><strong>Identity Proof:</strong> [Aadhaar Redacted]</li>
+        <h1><i class="fa-solid fa-helmet-safety"></i> Labour / e-Shram Card Services</h1>
+        <hr style="margin: 15px 0; border: 0; border-top: 1px solid #ccc;">
+
+        <!-- 📌 Service Introduction -->
+        <div class="section-box">
+            <h3>📌 Service Introduction</h3>
+            <p>The e-Shram portal is operated by the Government of India to create a national database of unorganized workers and provide them with the benefits of government schemes.</p>
+        </div>
+
+        <!-- 📋 Required Documents -->
+        <div class="section-box">
+            <h3>📋 Required Documents</h3>
+            <ul>
+                <li><strong>Identity Proof:</strong> [Aadhaar Redacted] Card</li>
                 <li><strong>Mobile Number:</strong> Mobile number linked with Aadhaar card (For OTP verification)</li>
                 <li><strong>Bank Details:</strong> Bank passbook (Account number and IFSC code)</li>
                 <li><strong>Other Details:</strong> Age limit 16 to 59 years, Occupation details</li>
             </ul>
+        </div>
 
-            <!-- ⏱️ Time & Fee -->
-            <h3 style="color: var(--primary-color); font-size: 16px; margin-top: 20px; margin-bottom: 8px;"><i class="fa-solid fa-clock"></i> Time & Fee</h3>
-            <div style="background: #f1f5f9; padding: 12px; border-radius: 8px; font-size: 14px; line-height: 1.6;">
-                <p><strong>⏱️ Estimated Time:</strong> Instant (Tatkal Registration)</p>
-                <p style="margin-top: 5px;"><strong>💰 Government/CSC Fee:</strong> Registration on the portal is completely free. Printing charges may apply at CSC centers.</p>
-            </div>
-
-            <!-- 🔗 Important Links Table -->
-            <h3 style="color: var(--primary-color); font-size: 16px; margin-top: 20px; margin-bottom: 10px;"><i class="fa-solid fa-link"></i> Important Links</h3>
-            
-            <div style="border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; margin-bottom: 20px;">
-                <div style="background: #16a34a; color: white; padding: 10px; font-weight: bold; text-align: center; font-size: 14px;">
-                    E-Shram Portal Quick Links
+        <!-- ⏱️ Time & Fee -->
+        <div class="section-box">
+            <h3>⏱️ Time & Fee</h3>
+            <div class="info-grid">
+                <div>
+                    <strong>⏱️ Estimated Time:</strong>
+                    <p>Instant (Tatkal Registration)</p>
                 </div>
-                
-                <div style="display: flex; justify-content: space-between; padding: 12px; border-bottom: 1px solid #e2e8f0; font-size: 14px; align-items: center;">
-                    <span>Register on e-Shram (New Registration)</span>
-                    <a href="https://eshram.gov.in/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: none;">Click Here</a>
-                </div>
-
-                <div style="display: flex; justify-content: space-between; padding: 12px; border-bottom: 1px solid #e2e8f0; font-size: 14px; align-items: center;">
-                    <span>Update / Download e-Shram Card</span>
-                    <a href="https://eshram.gov.in/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: none;">Click Here</a>
-                </div>
-
-                <div style="display: flex; justify-content: space-between; padding: 12px; font-size: 14px; align-items: center;">
-                    <span>Official e-Shram Website</span>
-                    <a href="https://eshram.gov.in/" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: none;">eshram.gov.in</a>
+                <div>
+                    <strong>💰 Government/CSC Fee:</strong>
+                    <p>Registration: Free | Printing charges may apply at CSC centers.</p>
                 </div>
             </div>
+        </div>
 
-            <!-- ❓ FAQ -->
-            <h3 style="color: var(--primary-color); font-size: 16px; margin-top: 20px; margin-bottom: 10px;"><i class="fa-solid fa-circle-question"></i> Frequently Asked Questions (FAQ)</h3>
-            
-            <div style="background: #f8fafc; border-left: 4px solid #2563eb; padding: 10px; margin-bottom: 10px; font-size: 13px;">
-                <strong>Q1. Who is eligible to get an e-Shram card?</strong><br>
-                <span style="color: var(--text-muted);">Ans: All unorganized sector workers (such as laborers, cart drivers, domestic workers, etc.) aged between 16 and 59 years are eligible.</span>
+        <!-- 🔗 Useful Important Links Section -->
+        <div class="section-box">
+            <h3>🔗 Useful Important Links</h3>
+            <table class="links-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Some Useful Important Links</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Register on e-Shram (New Registration)</td>
+                        <td><a href="https://eshram.gov.in/" target="_blank">Click Here</a></td>
+                    </tr>
+                    <tr>
+                        <td>Update / Download e-Shram Card</td>
+                        <td><a href="https://eshram.gov.in/" target="_blank">Click Here</a></td>
+                    </tr>
+                    <tr>
+                        <td>Join WhatsApp Channel (Latest Updates)</td>
+                        <td><a href="https://whatsapp.com/channel/0029VbDDQxCHgZWdzLBAbC2T" target="_blank">Click Here</a></td>
+                    </tr>
+                    <tr>
+                        <td>Official e-Shram Website</td>
+                        <td><a href="https://eshram.gov.in/" target="_blank">eshram.gov.in</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ❓ FAQ -->
+        <div class="section-box" style="border-bottom: none;">
+            <h3>❓ Frequently Asked Questions (FAQ)</h3>
+            <div class="faq-item">
+                <strong>Q1. Who is eligible to get an e-Shram card?</strong>
+                <p>Ans: All unorganized sector workers (such as laborers, cart drivers, domestic workers, etc.) aged between 16 and 59 years are eligible.</p>
             </div>
-
-            <div style="background: #f8fafc; border-left: 4px solid #2563eb; padding: 10px; font-size: 13px;">
-                <strong>Q2. Is there any fee for this?</strong><br>
-                <span style="color: var(--text-muted);">Ans: No, registration on the e-Shram portal is completely free of cost.</span>
+            <div class="faq-item">
+                <strong>Q2. Is there any fee for this?</strong>
+                <p>Ans: No, registration on the e-Shram portal is completely free of cost.</p>
             </div>
-
         </div>
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer style="text-align: center; padding: 15px; margin-top: 30px;">
         <p>&copy; 2026 CSC Digital Seva Portal | All Rights Reserved</p>
     </footer>
 
