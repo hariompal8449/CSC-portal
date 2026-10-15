@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-key="aadhaar_page_title">Aadhaar Services - CSC Digital Portal</title>
+    <!-- Root style link -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -11,16 +12,17 @@
             max-width: 900px;
             margin: 30px auto;
             padding: 20px;
-            background: var(--card-bg);
+            background: var(--card-bg, #ffffff);
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
         .back-btn {
             display: inline-block;
             margin-bottom: 20px;
-            color: var(--primary-color);
+            color: var(--primary-color, #2563eb);
             text-decoration: none;
             font-weight: bold;
+            font-size: 16px;
         }
         .section-box {
             margin-bottom: 25px;
@@ -28,8 +30,9 @@
             border-bottom: 1px solid #e2e8f0;
         }
         .section-box h3 {
-            color: var(--primary-color);
+            color: var(--primary-color, #1e293b);
             margin-bottom: 10px;
+            font-size: 18px;
         }
         .info-grid {
             display: grid;
@@ -73,21 +76,31 @@
             text-decoration: underline;
             color: #1d4ed8;
         }
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .faq-item p {
+            margin-top: 5px;
+            color: #475569;
+        }
     </style>
 </head>
 <body>
 
+    <!-- Service Detail Content -->
     <div class="service-detail-container">
         <a href="../index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> <span data-key="back_to_home">Back to Home Page</span></a>
 
         <h1><i class="fa-solid fa-id-card"></i> <span data-key="aadhaar_main_heading">Aadhaar Card Services</span></h1>
         <hr style="margin: 15px 0; border: 0; border-top: 1px solid #ccc;">
 
+        <!-- 📌 Service Introduction -->
         <div class="section-box">
             <h3 data-key="intro_heading">📌 Service Introduction</h3>
             <p data-key="aadhaar_intro_desc">Aadhaar is a 12-digit identification number issued by the Unique Identification Authority of India (UIDAI). Through this portal, you can find information regarding new Aadhaar enrollment, name/address/mobile updates, e-Aadhaar download, Aadhaar PVC card ordering, and tracking status.</p>
         </div>
 
+        <!-- 📋 Required Documents -->
         <div class="section-box">
             <h3 data-key="docs_heading">📋 Required Documents</h3>
             <ul>
@@ -97,8 +110,9 @@
             </ul>
         </div>
 
+        <!-- ⏱️ Time & Fee -->
         <div class="section-box">
-            <h3 data-key="time_fee_heading">⏱️ Time & 💰 Fees</h3>
+            <h3 data-key="time_fee_heading">⏱️ Time & Fees</h3>
             <div class="info-grid">
                 <div>
                     <strong data-key="est_time_title">⏱️ Estimated Time:</strong>
@@ -111,6 +125,7 @@
             </div>
         </div>
 
+        <!-- 🔗 Useful Important Links Section -->
         <div class="section-box">
             <h3 data-key="useful_links_heading">🔗 Useful Important Links</h3>
             <table class="links-table">
@@ -130,15 +145,19 @@
                     </tr>
                     <tr>
                         <td data-key="aadhaar_link_3">Check Update / Enrolment Status</td>
-                        <td><a href="#" target="_blank" data-key="click_here">Click Here</a></td>
+                        <td><a href="https://myaadhaar.uidai.gov.in" target="_blank" data-key="click_here">Click Here</a></td>
                     </tr>
                     <tr>
                         <td data-key="aadhaar_link_4">Order Aadhaar PVC Card</td>
-                        <td><a href="#" target="_blank" data-key="click_here">Click Here</a></td>
+                        <td><a href="https://myaadhaar.uidai.gov.in" target="_blank" data-key="click_here">Click Here</a></td>
                     </tr>
                     <tr>
                         <td data-key="aadhaar_link_5">Check Bank Aadhaar Seeding Status</td>
-                        <td><a href="#" target="_blank" data-key="click_here">Click Here</a></td>
+                        <td><a href="https://resident.uidai.gov.in/bank-mapping" target="_blank" data-key="click_here">Click Here</a></td>
+                    </tr>
+                    <tr>
+                        <td>Join WhatsApp Channel (Latest Updates)</td>
+                        <td><a href="https://whatsapp.com/channel/0029VbDDQxCHgZWdzLBAbC2T" target="_blank">Click Here</a></td>
                     </tr>
                     <tr>
                         <td data-key="aadhaar_link_6">Official UIDAI Portal</td>
@@ -148,6 +167,7 @@
             </table>
         </div>
 
+        <!-- ❓ FAQ -->
         <div class="section-box" style="border-bottom: none;">
             <h3 data-key="faq_heading">❓ Frequently Asked Questions (FAQ)</h3>
             <div class="faq-item">
@@ -161,6 +181,7 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer style="text-align: center; padding: 15px; margin-top: 30px;">
         <p data-key="footer_rights">&copy; 2026 CSC Digital Seva Portal | All Rights Reserved</p>
     </footer>
